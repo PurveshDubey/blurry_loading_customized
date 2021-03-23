@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .bg{
+    background-image: url('https://i.pinimg.com/originals/20/c4/ed/20c4ed904c96d955c7baed21e22d47e0.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+  }
+  
+  .loading-text{
+    font-size: 50px;
+    color: white;
+  }
+  
+  .wrapper{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px
+  }
+  
+  .input{
+    height: 60px;
+    width: 200px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 1px solid #aaa;
+    margin: 10px 0 0 25px;
+    padding: 10px 0;
+  }
+  
+  input:focus::-webkit-input-placeholder{
+    color: dodgerblue;
+  }
+  
+  .input:focus + .underline{
+    transform: scale(1);
+  }
+  
+  .underline{
+    position: absolute;
+    bottom: 110px;
+    left: 40px;
+    background-color: dodgerblue;
+    transform: scale(0,1);
+    transition: all 0.5s linear;
+    width: 205px;
+    height: 2px;
+  }
+  
+  .btn{
+    position: absolute;
+    bottom: 30px;
+    left: 90px;
+    width: 100px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px 5px #ddd;
+    cursor: pointer;
+    outline: none;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .btn:hover{
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 0 0 0 0 white;
+  }
+  
+  .btn:active{
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 0 0 0 0 white;
+    transform: translateY(1px);
+  }
